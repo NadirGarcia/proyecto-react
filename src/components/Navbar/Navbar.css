@@ -1,0 +1,47 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    justify-content: center;
+}
+
+.navbar__brand{
+    display: flex;
+    position: relative;
+    left: 20em;
+    align-items: center;
+    padding: 1em;
+}
+
+.navbar__input{
+    width: 20vw;
+    height: 4vh;
+    border: none;
+    border-top-left-radius: .3em;
+    border-bottom-left-radius: .3em;
+}
+
+.navbar__input--btn{
+    height: 4.3vh;
+    color: whitesmoke;
+    background-color: #173f95e4;
+    border: none;
+    border-top-right-radius: .3em;
+    border-bottom-right-radius: .3em;
+}
+
+.btn{
+    width: 10em;
+    height: 2.5em;
+    color: whitesmoke;
+    background-color:rgb(174, 174, 174);
+    border: none;
+    border-radius: 0.5em;
+    margin-inline: .8em;
+    margin-bottom: .5em;
+}
+
+.header__logo{
+    width: 10vw;
+    margin: 1em;
+}
