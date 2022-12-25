@@ -1,14 +1,14 @@
 .navbar{
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    background-color:  gray;
     justify-content: center;
 }
 
 .navbar__brand{
     display: flex;
     position: relative;
-    left: 20em;
+    left: 26em;
     align-items: center;
     padding: 1em;
 }
@@ -42,6 +42,6 @@
 }
 
 .header__logo{
-    width: 10vw;
+    width: 7vw;
     margin: 1em;
 }
