@@ -1,24 +1,24 @@
-import "./Navbar.css"
-import CartWidget from "../CartWidget/CartWidget";
-import Button from "../Button/Button";
+import './Navbar.css'
+import CartWidget from '../CartWidget/CartWidget';
+import Button from '../Button/Button';
 
 const Navbar = () => {
     return (
-        <nav className="navbar">
-            <div className="navbar__brand">
-                <img src = "./images/correo.png" className ="header__logo" alt ="logo" />
+        <nav className='navbar'>
+            <div className='navbar__brand'>
+                <img src = './images/correo.png' className ='header__logo' alt ='logo' />
                 <div>
-                    <input className="navbar__input"></input>
-                    <button className="navbar__input--btn">Buscar</button>
+                    <input className='navbar__input'></input>
+                    <button className='navbar__input--btn'>Buscar</button>
                 </div>
                 <CartWidget />
             </div>
-            <div className="navbar__buttons">
-                <Button label ="Paquetes"/>
-                <Button label ="Vuelos"/>
-                <Button label ="Alojamientos"/>
-                <Button label ="Paradisiacos"/>
-                <Button label ="Ofertas"/>
+            <div className='navbar__buttons'>
+                <Button label ='Paquetes'/>
+                <Button label ='Vuelos'/>
+                <Button label ='Alojamientos'/>
+                <Button label ='Paradisiacos'/>
+                <Button label ='Ofertas'/>
             </div>
         </nav>
     );
