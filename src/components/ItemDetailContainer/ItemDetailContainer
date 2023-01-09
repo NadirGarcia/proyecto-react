@@ -1,0 +1,17 @@
+import { getProducts } from "../../asyncMock"
+import { useState, useEffect } from "react"
+import ItemDetail from "../ItemDetail/ItemDetail"
+
+
+const ItemDetailContainer = () => {
+    const [detailProduct, setDetailProducts] = useState ([])
+
+    useEffect(() => {
+        getProducts().then(detailProduct => {
+            setDetailProducts(detailProduct)
+        })
+    },[])
+    
+}
+
+export default ItemDetailContainer

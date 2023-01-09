@@ -32,3 +32,4 @@ export const getProducts = () => {
         }, 2000)
     })
 }
+

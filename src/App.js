@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import ItemCount from './components/ItemCount/ItemCount';
+//import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
         <Navbar />
         <ItemListContainer greeting = "Los mejores destinos al mejor precio"/>
-        <ItemCount onAdd = {(count) => console.log(count)} initial='1'/> 
+        {/* <ItemDetailContainer /> */}
     </div>
   );
 }

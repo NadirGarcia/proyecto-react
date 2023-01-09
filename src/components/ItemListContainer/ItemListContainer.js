@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 
 const ItemListContainer = ({greeting}) => {
     const [products, setProducts] = useState([])
-        
+    
     useEffect(() => {
         getProducts().then(products => {
             setProducts(products)
@@ -13,8 +13,10 @@ const ItemListContainer = ({greeting}) => {
     },[])
 
     return(
-        <h1 className = "h1">{greeting}</h1>,
-        <ItemList products={products}/>
+        <div>
+            <h1 className = "h1">{greeting}</h1>
+            <ItemList products={products}/>
+        </div>
     )
 }
 
