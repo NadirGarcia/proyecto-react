@@ -7,10 +7,14 @@
 
 .navbar__brand{
     display: flex;
-    position: relative;
     left: 26em;
     align-items: center;
     padding: 1em;
+}
+
+.navbar__search{
+    position: relative;
+    left: 25em;
 }
 
 .navbar__input{
@@ -42,6 +46,8 @@
 }
 
 .header__logo{
+    position: relative;
+    left: 22em;
     width: 7vw;
     margin: 1em;
 }

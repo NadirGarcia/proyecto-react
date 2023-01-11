@@ -1,14 +1,10 @@
-import ItemCount from './components/ItemCount/ItemCount';
+//import ItemCount from './components/ItemCount/ItemCount';
 
-const ItemDetail = ({id, name, price, category, img, description}) => {
+const ItemDetail = ({ products }) => {
     return(
-        <div>
-            <h1>{name}</h1>
-            <img src= {img} className = 'image' alt = "foto"/>
-            <h3>{price}</h3>
-            <p>{description}</p>
-            <ItemCount onAdd = {(count) => console.log(count)} initial='1'/> 
-        </div>
+        <ul>
+            {products.map(prod => <li>{prod.name}</li>)}
+        </ul>
     )
 }
 

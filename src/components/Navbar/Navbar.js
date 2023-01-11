@@ -7,7 +7,7 @@ const Navbar = () => {
         <nav className='navbar'>
             <div className='navbar__brand'>
                 <img src = './images/correo.png' className ='header__logo' alt ='logo' />
-                <div>
+                <div className = 'navbar__search'>
                     <input className='navbar__input'></input>
                     <button className='navbar__input--btn'>Buscar</button>
                 </div>
