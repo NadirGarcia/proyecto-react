@@ -1,0 +1,30 @@
+.div__container{
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.image__detail{
+    object-fit: cover;
+    width: 80vw;
+    height: 50vh;
+    border-radius: 1em;
+}
+
+.div__description{
+    display: flex;
+    width: 80vw;
+}
+
+.div__description--data{
+    width: 55vw;
+    height: auto;
+    padding: 3em;
+    border-right: 1px solid black;
+    margin: 1em;
+}
+
+.div__description--buy{
+    width: 20vw;
+}

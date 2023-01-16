@@ -1,12 +1,15 @@
 import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget';
-import Button from '../Button/Button';
+import { useNavigate, Link } from 'react-router-dom'
+
 
 const Navbar = () => {
+const navigate = useNavigate()
+
     return (
         <nav className='navbar'>
             <div className='navbar__brand'>
-                <img src = './images/correo.png' className ='header__logo' alt ='logo' />
+                <img onClick={() => navigate('/')} src = './images/correo.png'  className ='header__logo' alt ='logo' />
                 <div className = 'navbar__search'>
                     <input className='navbar__input'></input>
                     <button className='navbar__input--btn'>Buscar</button>
@@ -14,11 +17,8 @@ const Navbar = () => {
                 <CartWidget />
             </div>
             <div className='navbar__buttons'>
-                <Button label ='Paquetes'/>
-                <Button label ='Vuelos'/>
-                <Button label ='Alojamientos'/>
-                <Button label ='Paradisiacos'/>
-                <Button label ='Ofertas'/>
+                <Link to={`/category/beach`} className= 'btn'>Playa</Link>
+                <Link to={`/category/city`} className= 'btn'>Ciudad</Link>
             </div>
         </nav>
     );

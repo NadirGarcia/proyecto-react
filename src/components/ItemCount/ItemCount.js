@@ -1,23 +1,31 @@
 import { useState } from 'react'
 
-const ItemCount = ( { onAdd, initial, stock }) => {
+const ItemCount = ( { initial = 1, stock }) => {
 
-    const [count, setCount] = useState(0)
-
-    const increment = () =>{
-        setCount(prev => prev + 1)
-    }
+    const [count, setCount] = useState(initial)
 
     const decrement = () => {
-        setCount(prev => prev - 1)
+        if(count > 1){
+            setCount(prev => prev - 1)
+        }
+    }
+
+    const increment = () =>{
+        if(count < stock){
+            setCount(prev => prev + 1)
+        }
+    }
+
+    const onAdd = () => {
+        console.log(`Se agregaron ${count} noches`);
     }
 
     return(
         <div>
             <h2>{count}</h2>
-            <button onClick={increment}>+</button>
             <button onClick={decrement}>-</button>
-            <button onClick={() => onAdd(count)}>add to Cart</button>
+            <button onClick={increment}>+</button>
+            <button onClick={onAdd}>Agregar al Carrito</button>
         </div>
     )
 }

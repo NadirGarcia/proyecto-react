@@ -3,6 +3,7 @@
     left: 48em;
     top: 6em;
     color: rgb(68, 255, 68);
+    cursor: pointer;
 }
 
 .cart__widget--img{

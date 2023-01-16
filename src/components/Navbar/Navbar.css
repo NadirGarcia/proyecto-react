@@ -1,7 +1,7 @@
 .navbar{
     display: flex;
     flex-direction: column;
-    background-color:  gray;
+    background-image: linear-gradient(to bottom, grey, rgb(213, 213, 213)); 
     justify-content: center;
 }
 
@@ -34,15 +34,29 @@
     border-bottom-right-radius: .3em;
 }
 
+.navbar__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+}
+
 .btn{
     width: 10em;
-    height: 2.5em;
-    color: whitesmoke;
-    background-color:rgb(174, 174, 174);
-    border: none;
+    height: 2em;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(98, 98, 98);
+    /* border: 1px solid  whitesmoke; */
     border-radius: 0.5em;
     margin-inline: .8em;
-    margin-bottom: .5em;
+    padding-top: 6px;
+}
+
+.btn:hover{
+    background-color: whitesmoke;
+    color: rgb(51, 48, 48);
+    transition: 1s;
 }
 
 .header__logo{
@@ -50,4 +64,5 @@
     left: 22em;
     width: 7vw;
     margin: 1em;
+    cursor: pointer;
 }
