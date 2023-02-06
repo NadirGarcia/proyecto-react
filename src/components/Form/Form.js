@@ -6,9 +6,19 @@ const Form = (handleOnSubmit) => {
     const [address, setAddress] = useState('')
     const [email, setEmail] = useState('')
 
+/*     const handleOnSubmit = (event) => {
+        event.preventDefault()
+        const newBuyer = {
+            buyer: {
+                name,
+                address,
+                email
+            }
+        }
+    } */
 
     return(
-        <form className="form" onSubmit= {() => handleOnSubmit(name)}>
+        <form className="form" onSubmit= {() => handleOnSubmit({ name, address, email})}>
             <label>
                 Nombre
                 <input value={name} onChange={ev => setName(ev.target.value)} />

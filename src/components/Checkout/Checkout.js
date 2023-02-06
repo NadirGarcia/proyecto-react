@@ -61,16 +61,24 @@ const Checkout = () => {
     }
 
 
-    const func = (nadir) => {
-        console.log(nadir)
-    }
 
+    const handleOnSubmit = ({ event, name, address, email }) => {
+        event.preventDefault()
+        const newBuyer = {
+            buyer: {
+                name,
+                address,
+                email
+            }
+        }
+        console.log(newBuyer)
+    }
 
 
     return (
         <div>
             <h3>Debe registrase para finalizar su compra</h3>
-            <Form handleOnSubmit={func}/>
+            <Form handleOnSubmit={handleOnSubmit}/>
             <button onClick={createOrder}>Generar Compra</button>
         </div>
     )

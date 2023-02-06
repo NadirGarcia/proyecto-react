@@ -1,5 +1,6 @@
 .cart__widget{
     position: relative;
+    text-decoration: none;
     left: 48em;
     top: 6em;
     color: rgb(68, 255, 68);
